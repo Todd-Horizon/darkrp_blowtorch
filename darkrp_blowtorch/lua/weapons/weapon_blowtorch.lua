@@ -74,7 +74,7 @@ function SWEP:CanPrimaryAttack ( ) return true; end
 function SWEP:PrimaryAttack()	
 	if self:GetTable().LastNoise == nil then self:GetTable().LastNoise = true; end
 	if self:GetTable().LastNoise then
-		self.Weapon:EmitSound(self.ShootSound, 60)
+		self.Weapon:EmitSound(self.ShootSound, 20)
 		self:GetTable().LastNoise = false;
 	else
 		self:GetTable().LastNoise = true;
